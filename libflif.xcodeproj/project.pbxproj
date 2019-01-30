@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329BD14422020364007576C8 /* flif-interface_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B5991C2201C01000D22692 /* flif-interface_common.cpp */; };
 		32B599A22201C01100D22692 /* lodepng.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B599082201C01000D22692 /* lodepng.h */; };
 		32B599A32201C01100D22692 /* stb_image_write.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B599092201C01000D22692 /* stb_image_write.h */; };
 		32B599A42201C01100D22692 /* lodepng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B5990A2201C01000D22692 /* lodepng.cpp */; };
@@ -20,7 +21,6 @@
 		32B599B02201C01100D22692 /* flif-interface-private_dec.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 32B599182201C01000D22692 /* flif-interface-private_dec.hpp */; };
 		32B599B12201C01100D22692 /* flif-interface-private_enc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 32B599192201C01000D22692 /* flif-interface-private_enc.hpp */; };
 		32B599B32201C01100D22692 /* flif-interface_dec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B5991B2201C01000D22692 /* flif-interface_dec.cpp */; };
-		32B599B42201C01100D22692 /* flif-interface_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B5991C2201C01000D22692 /* flif-interface_common.cpp */; };
 		32B599B52201C01100D22692 /* flif_enc.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B5991D2201C01000D22692 /* flif_enc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32B599B62201C01100D22692 /* flif-interface_enc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B5991E2201C01000D22692 /* flif-interface_enc.cpp */; };
 		32B599B72201C01100D22692 /* flif-interface-private_common.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 32B5991F2201C01000D22692 /* flif-interface-private_common.hpp */; };
@@ -97,12 +97,12 @@
 /* Begin PBXFileReference section */
 		3209A622220181BB004D7D4E /* libflif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libflif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B5977E2201BD4C00D22692 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32B599082201C01000D22692 /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lodepng.h; sourceTree = "<group>"; };
+		32B599082201C01000D22692 /* lodepng.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = lodepng.h; sourceTree = "<group>"; };
 		32B599092201C01000D22692 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
 		32B5990A2201C01000D22692 /* lodepng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lodepng.cpp; sourceTree = "<group>"; };
 		32B5990B2201C01000D22692 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		32B5990E2201C01000D22692 /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
-		32B599102201C01000D22692 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		32B599102201C01000D22692 /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = config.h; sourceTree = "<group>"; };
 		32B599132201C01000D22692 /* flif-dec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "flif-dec.hpp"; sourceTree = "<group>"; };
 		32B599142201C01000D22692 /* io.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = io.hpp; sourceTree = "<group>"; };
 		32B599152201C01000D22692 /* flif-enc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "flif-enc.hpp"; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		32B599202201C01000D22692 /* flif-interface-private.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "flif-interface-private.hpp"; sourceTree = "<group>"; };
 		32B599212201C01000D22692 /* flif_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flif_common.h; sourceTree = "<group>"; };
 		32B599222201C01000D22692 /* flif_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flif_dec.h; sourceTree = "<group>"; };
-		32B599232201C01000D22692 /* flif_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flif_config.h; sourceTree = "<group>"; };
+		32B599232201C01000D22692 /* flif_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = flif_config.h; sourceTree = "<group>"; };
 		32B599252201C01000D22692 /* image-pnm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "image-pnm.cpp"; sourceTree = "<group>"; };
 		32B599262201C01000D22692 /* image-metadata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "image-metadata.cpp"; sourceTree = "<group>"; };
 		32B599272201C01000D22692 /* image-png.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "image-png.hpp"; sourceTree = "<group>"; };
@@ -140,18 +140,18 @@
 		32B599382201C01000D22692 /* compiler-specific.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "compiler-specific.hpp"; sourceTree = "<group>"; };
 		32B599392201C01000D22692 /* flif-enc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "flif-enc.cpp"; sourceTree = "<group>"; };
 		32B5993A2201C01000D22692 /* fileio.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fileio.hpp; sourceTree = "<group>"; };
-		32B5993C2201C01000D22692 /* chance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chance.cpp; sourceTree = "<group>"; };
-		32B5993D2201C01000D22692 /* symbol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = symbol.cpp; sourceTree = "<group>"; };
-		32B5993E2201C01000D22692 /* symbol_enc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = symbol_enc.hpp; sourceTree = "<group>"; };
-		32B5993F2201C01000D22692 /* bit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bit.hpp; sourceTree = "<group>"; };
-		32B599402201C01000D22692 /* rac.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rac.hpp; sourceTree = "<group>"; };
-		32B599412201C01000D22692 /* rac_enc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rac_enc.hpp; sourceTree = "<group>"; };
-		32B599422201C01000D22692 /* bit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bit.cpp; sourceTree = "<group>"; };
-		32B599432201C01000D22692 /* compound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compound.hpp; sourceTree = "<group>"; };
-		32B599442201C01000D22692 /* chance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chance.hpp; sourceTree = "<group>"; };
-		32B599452201C01000D22692 /* symbol.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = symbol.hpp; sourceTree = "<group>"; };
-		32B599462201C01000D22692 /* util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
-		32B599472201C01000D22692 /* compound_enc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compound_enc.hpp; sourceTree = "<group>"; };
+		32B5993C2201C01000D22692 /* chance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = chance.cpp; sourceTree = "<group>"; };
+		32B5993D2201C01000D22692 /* symbol.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = symbol.cpp; sourceTree = "<group>"; };
+		32B5993E2201C01000D22692 /* symbol_enc.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = symbol_enc.hpp; sourceTree = "<group>"; };
+		32B5993F2201C01000D22692 /* bit.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = bit.hpp; sourceTree = "<group>"; };
+		32B599402201C01000D22692 /* rac.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = rac.hpp; sourceTree = "<group>"; };
+		32B599412201C01000D22692 /* rac_enc.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = rac_enc.hpp; sourceTree = "<group>"; };
+		32B599422201C01000D22692 /* bit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = bit.cpp; sourceTree = "<group>"; };
+		32B599432201C01000D22692 /* compound.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = compound.hpp; sourceTree = "<group>"; };
+		32B599442201C01000D22692 /* chance.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = chance.hpp; sourceTree = "<group>"; };
+		32B599452201C01000D22692 /* symbol.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = symbol.hpp; sourceTree = "<group>"; };
+		32B599462201C01000D22692 /* util.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = util.hpp; sourceTree = "<group>"; };
+		32B599472201C01000D22692 /* compound_enc.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = compound_enc.hpp; sourceTree = "<group>"; };
 		32B599482201C01000D22692 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 		32B5994A2201C01000D22692 /* yc1c2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = yc1c2.hpp; sourceTree = "<group>"; };
 		32B5994B2201C01000D22692 /* factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = factory.hpp; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		32B599572201C01000D22692 /* palette_C.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = palette_C.hpp; sourceTree = "<group>"; };
 		32B599F22201C87500D22692 /* libflifExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libflifExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B599F42201C87500D22692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32B59A182202002100D22692 /* flif-interface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = "flif-interface.cpp"; sourceTree = "<group>"; };
+		32B59A182202002100D22692 /* flif-interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "flif-interface.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -520,13 +520,13 @@
 				32B599CE2201C01100D22692 /* io.cpp in Sources */,
 				32B599C72201C01100D22692 /* image-png.cpp in Sources */,
 				32B599BD2201C01100D22692 /* image-metadata.cpp in Sources */,
-				32B599B42201C01100D22692 /* flif-interface_common.cpp in Sources */,
 				32B599CD2201C01100D22692 /* flif-dec.cpp in Sources */,
 				32B599C12201C01100D22692 /* crc32k.cpp in Sources */,
 				32B599B32201C01100D22692 /* flif-interface_dec.cpp in Sources */,
 				32B599D22201C01100D22692 /* chance.cpp in Sources */,
 				32B599BF2201C01100D22692 /* image.cpp in Sources */,
 				32B599A72201C01100D22692 /* common.cpp in Sources */,
+				329BD14422020364007576C8 /* flif-interface_common.cpp in Sources */,
 				32B599D02201C01100D22692 /* flif-enc.cpp in Sources */,
 				32B599A42201C01100D22692 /* lodepng.cpp in Sources */,
 			);
@@ -673,6 +673,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FLIF/src/config.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -715,6 +717,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FLIF/src/config.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					FLIF_USE_STB_IMAGE,
