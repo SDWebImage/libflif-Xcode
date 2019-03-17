@@ -36,7 +36,19 @@ FLIF is a lossless image format based on MANIAC compression.
   s.exclude_files = 'src/viewflif.c', 'src/flif.cpp'
   s.preserve_paths = 'src', 'extern'
 
+  # Try to fix that `flif-interface_common.cpp` using `#pragma once` in main file, which been included twice and cause duplicated symbols
+  s.prepare_command = <<-CMD
+                      sed -i.bak 's/flif-interface_common.cpp/flif-interface_common.hpp/g' './src/library/flif-interface_dec.cpp'
+                      sed -i.bak 's/flif-interface_common.cpp/flif-interface_common.hpp/g' './src/library/flif-interface_enc.cpp'
+                      sed -i.bak 's/flif-interface_dec.cpp/flif-interface_dec.hpp/g' './src/library/flif-interface.cpp'
+                      sed -i.bak 's/flif-interface_enc.cpp/flif-interface_enc.hpp/g' './src/library/flif-interface.cpp'
+                      mv './src/library/flif-interface_common.cpp' './src/library/flif-interface_common.hpp'
+                      mv './src/library/flif-interface_dec.cpp' './src/library/flif-interface_dec.hpp'
+                      mv './src/library/flif-interface_enc.cpp' './src/library/flif-interface_enc.hpp'
+                      CMD
+
   s.xcconfig = {
+    'HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libpng',
     'OTHER_CPLUSPLUSFLAGS' => '$(inherited) -ftree-vectorize',
     'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) LODEPNG_NO_COMPILE_DISK'
   }

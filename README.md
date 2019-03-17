@@ -1,13 +1,16 @@
 # libflif + Xcode
 
 [![CI Status](http://img.shields.io/travis/SDWebImage/libflif-Xcode.svg?style=flat)](https://travis-ci.org/SDWebImage/libflif-Xcode)
+[![Version](https://img.shields.io/cocoapods/v/libflif.svg?style=flat)](http://cocoapods.org/pods/libflif)
+[![License](https://img.shields.io/cocoapods/l/libflif.svg?style=flat)](http://cocoapods.org/pods/libflif)
+[![Platform](https://img.shields.io/cocoapods/p/libflif.svg?style=flat)](http://cocoapods.org/pods/libflif)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/SDWebImage/libflif-Xcode)
 
-A wrapper for [libflif](https://github.com/FLIF-hub/FLIF) + Xcode project.
+A wrapper for [libflif](https://github.com/FLIF-hub/FLIF) + Xcode project. This enables Carthage support.
 
 libflif is a codec library for [Free Lossless Image Format](https://flif.info/).
 
-This enables Carthage support.
+This repo also including the CocoaPods's spec file to use libflif with the dependency management instead of the vendored library. For CocoaPods, we use `libpng` as dependency.
 
 ## Requirements
 
@@ -18,10 +21,20 @@ This enables Carthage support.
 
 ## Installation
 
+### Carthage
+
 libflif is (via this repo) available through [Carthage](https://github.com/Carthage/Carthage).
 
 ```
 github "SDWebImage/libflif-Xcode"
+```
+
+### CocoaPods
+
+libflif is available through [CocoaPods](https://github.com/CocoaPods/CocoaPods).
+
+```
+pod 'libflif'
 ```
 
 ## Usage
