@@ -33,12 +33,23 @@ FLIF is a lossless image format based on MANIAC compression.
 
   s.source_files = 'src/**/*.{h,c,cc,cpp,hpp}', 'extern/**/*.{h,c,cc,cpp,hpp}'
   s.public_header_files = 'src/library/*.h'
-  s.exclude_files = 'src/viewflif.c'
+  s.exclude_files = 'src/viewflif.c', 'src/flif.cpp'
+  s.preserve_paths = 'src', 'extern'
 
   s.xcconfig = {
-    'OTHER_CPLUSPLUSFLAGS' => '$(inherited) -ftree-vectorize'
+    'OTHER_CPLUSPLUSFLAGS' => '$(inherited) -ftree-vectorize',
+    'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) LODEPNG_NO_COMPILE_DISK'
   }
-  s.preserve_paths = 'src', 'extern'
-  s.dependency 'libpng'
+  # Temp solution: libpng on CocoaPods have only iOS && macOS platforms, using stb image for tvOS && watchOS
+  s.watchos.xcconfig = {
+    'OTHER_CPLUSPLUSFLAGS' => '$(inherited) -ftree-vectorize',
+    'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FLIF_USE_STB_IMAGE LODEPNG_NO_COMPILE_PNG LODEPNG_NO_COMPILE_DISK'
+  }
+  s.tvos.xcconfig = {
+    'OTHER_CPLUSPLUSFLAGS' => '$(inherited) -ftree-vectorize',
+    'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FLIF_USE_STB_IMAGE LODEPNG_NO_COMPILE_PNG LODEPNG_NO_COMPILE_DISK'
+  }
+  s.ios.dependency 'libpng'
+  s.osx.dependency 'libpng'
   s.libraries = 'c++'
 end
